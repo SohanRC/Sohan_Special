@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-120vh) translateX(40px) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-110vh) translateX(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translateY(0) scale(0.8);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-125vh) translateX(25px) scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes float4 {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-115vh) translateX(-35px) rotate(-15deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float5 {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-130vh) translateX(50px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes float6 {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-118vh) translateX(-20px);
+    opacity: 0;
+  }
+}
+
+.animate-float1 {
+  animation: float1 8s linear infinite;
+}
+
+.animate-float2 {
+  animation: float2 10s linear infinite;
+}
+
+.animate-float3 {
+  animation: float3 7s linear infinite;
+}
+
+.animate-float4 {
+  animation: float4 9s linear infinite;
+}
+
+.animate-float5 {
+  animation: float5 11s linear infinite;
+}
+
+.animate-float6 {
+  animation: float6 8.5s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 192, 203, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ff69b4, #ff1493);
+
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ec4899;
+  border-radius: 999px;
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.6);
+}
