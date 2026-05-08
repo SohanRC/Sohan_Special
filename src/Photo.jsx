@@ -6,7 +6,7 @@ const images = [
   { src: "/shreya/Golu2.png", caption: "Ummmm 🥰" },
   { src: "/shreya/front.jpeg", caption: "Cuteeee 💘" },
   { src: "/shreya/soyyum.jpeg", caption: "Smiles 😊" },
-  { src: "/shreya/sidelook.jpeg", caption: "Swaaaggg 😉" },
+  { src: "/shreya/sidelook.jpeg", caption: "Classic 😉" },
   { src: "/shreya/Topor.jpeg", caption: "Ouuukay 👍" },
   { src: "/shreya/metcalfe.jpeg", caption: "Smileee Please 😂" },
   { src: "/shreya/Hideaway.jpeg", caption: "Sweeetttt ✨" },
