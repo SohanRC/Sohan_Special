@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { useNavigate } from "react-router";
 import song from "./assets/soft_music.mp3";
 
 const images = [
@@ -27,6 +28,7 @@ const rotations = [
 const Photo = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const audioRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -38,12 +40,45 @@ const Photo = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  // 🎵 Smooth Fade Out + Navigate
+  const handleNext = () => {
+    if (audioRef.current) {
+      let volume = audioRef.current.volume;
+
+      const fadeAudio = setInterval(() => {
+        if (volume > 0.05) {
+          volume -= 0.05;
+          audioRef.current.volume = volume;
+        } else {
+          clearInterval(fadeAudio);
+
+          audioRef.current.pause();
+
+          // redirect after fade
+          navigate("/letter");
+        }
+      }, 120);
+    } else {
+      navigate("/letter");
+    }
+  };
+
   return (
     <div className="relative min-h-screen w-full px-6 py-12 overflow-hidden">
       {/* AUDIO */}
       <audio ref={audioRef} loop>
         <source src={song} type="audio/mp3" />
       </audio>
+
+      <div className="absolute top-0 right-0 mt-2 mr-2 z-50">
+        <button
+          type="button"
+          className="text-white border-2 border-pink-700 font-medium leading-5 rounded-base text-xl px-4 py-2.5 cursor-pointer bg-pink-500 rounded-md transition-all hover:scale-105"
+          onClick={handleNext}
+        >
+          Next 🥳
+        </button>
+      </div>
 
       {/* Floating Hearts */}
       {/* Floating Decorations */}
