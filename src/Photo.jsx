@@ -2,18 +2,18 @@ import { useState, useRef, useEffect } from "react";
 import song from "./assets/soft_music.mp3";
 
 const images = [
-  { src: "./assets/shreya/GOLUU.jpeg", caption: "Goluuuu 💕" },
-  { src: "./assets/shreya/Golu2.png", caption: "Ummmm 🥰" },
-  { src: "./assets/shreya/front.jpeg", caption: "Cuteeee 💘" },
-  { src: "./assets/shreya/soyyum.jpeg", caption: "Smiles 😊" },
-  { src: "./assets/shreya/sidelook.jpeg", caption: "Swaaaggg 😉" },
-  { src: "./assets/shreya/Topor.jpeg", caption: "Ouuukay 👍" },
-  { src: "./assets/shreya/metcalfe.jpeg", caption: "Smileee Please 😂" },
-  { src: "./assets/shreya/Hideaway.jpeg", caption: "Sweeetttt ✨" },
-  { src: "./assets/shreya/Tatooo.jpeg", caption: "Ouuuffff 😎" },
-  { src: "./assets/shreya/snap.jpeg", caption: "Swaaag 😏" },
-  { src: "./assets/shreya/Us.jpeg", caption: "You & Me 💖" },
-  { src: "./assets/shreya/Doodle.jpeg", caption: "Forever & Always ❤️" },
+  { src: "public/assets/shreya/GOLUU.jpeg", caption: "Goluuuu 💕" },
+  { src: "public/assets/shreya/Golu2.png", caption: "Ummmm 🥰" },
+  { src: "public/assets/shreya/front.jpeg", caption: "Cuteeee 💘" },
+  { src: "public/assets/shreya/soyyum.jpeg", caption: "Smiles 😊" },
+  { src: "public/assets/shreya/sidelook.jpeg", caption: "Swaaaggg 😉" },
+  { src: "public/assets/shreya/Topor.jpeg", caption: "Ouuukay 👍" },
+  { src: "public/assets/shreya/metcalfe.jpeg", caption: "Smileee Please 😂" },
+  { src: "public/assets/shreya/Hideaway.jpeg", caption: "Sweeetttt ✨" },
+  { src: "public/assets/shreya/Tatooo.jpeg", caption: "Ouuuffff 😎" },
+  { src: "public/assets/shreya/snap.jpeg", caption: "Swaaag 😏" },
+  { src: "public/assets/shreya/Us.jpeg", caption: "You & Me 💖" },
+  { src: "public/assets/shreya/Doodle.jpeg", caption: "Forever & Always ❤️" },
 ];
 
 const rotations = [
@@ -75,7 +75,7 @@ const Photo = () => {
 
       {/* Background */}
       <img
-        src="./assets/photobg.png"
+        src="public/assets/photobg.png"
         className="absolute inset-0 w-full h-full object-cover -z-10"
       />
 

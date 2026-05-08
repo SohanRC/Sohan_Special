@@ -94,7 +94,7 @@ const Birthday = () => {
 
       {/* Background */}
       <img
-        src="./assets/Bday_background.png"
+        src="public/assets/Bday_background.png"
         alt=""
         className="h-full w-full object-cover"
       />
@@ -104,7 +104,7 @@ const Birthday = () => {
         <div className="relative group">
           {/* Cake (unchanged) */}
           <img
-            src="./assets/Bday_cake.png"
+            src="public/assets/Bday_cake.png"
             alt=""
             // className={`w-sm hover:w-xl md:w-xl md:hover:w-2xl transition-all duration-600
             // hover:cursor-pointer border-2 border-red-600 rounded-full`}
@@ -122,7 +122,7 @@ const Birthday = () => {
 
           {/* Rohee 1 → RIGHT */}
           <img
-            src="./assets/rohee3.jpg"
+            src="public/assets/rohee3.jpg"
             alt=""
             className="
               w-64 rounded-full absolute
@@ -140,7 +140,7 @@ const Birthday = () => {
 
           {/* Rohee 2 → LEFT */}
           <img
-            src="./assets/rohee2.jpg"
+            src="public/assets/rohee2.jpg"
             alt=""
             className="
               w-64 rounded-full absolute
