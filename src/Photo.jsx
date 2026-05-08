@@ -2,18 +2,18 @@ import { useState, useRef, useEffect } from "react";
 import song from "./assets/soft_music.mp3";
 
 const images = [
-  { src: "src/assets/shreya/GOLUU.jpeg", caption: "Goluuuu 💕" },
-  { src: "src/assets/shreya/Golu2.png", caption: "Ummmm 🥰" },
-  { src: "src/assets/shreya/front.jpeg", caption: "Cuteeee 💘" },
-  { src: "src/assets/shreya/soyyum.jpeg", caption: "Smiles 😊" },
-  { src: "src/assets/shreya/sidelook.jpeg", caption: "Swaaaggg 😉" },
-  { src: "src/assets/shreya/Topor.jpeg", caption: "Ouuukay 👍" },
-  { src: "src/assets/shreya/metcalfe.jpeg", caption: "Smileee Please 😂" },
-  { src: "src/assets/shreya/Hideaway.jpeg", caption: "Sweeetttt ✨" },
-  { src: "src/assets/shreya/Tatooo.jpeg", caption: "Ouuuffff 😎" },
-  { src: "src/assets/shreya/snap.jpeg", caption: "Swaaag 😏" },
-  { src: "src/assets/shreya/Us.jpeg", caption: "You & Me 💖" },
-  { src: "src/assets/shreya/Doodle.jpeg", caption: "Forever & Always ❤️" },
+  { src: "./assets/shreya/GOLUU.jpeg", caption: "Goluuuu 💕" },
+  { src: "./assets/shreya/Golu2.png", caption: "Ummmm 🥰" },
+  { src: "./assets/shreya/front.jpeg", caption: "Cuteeee 💘" },
+  { src: "./assets/shreya/soyyum.jpeg", caption: "Smiles 😊" },
+  { src: "./assets/shreya/sidelook.jpeg", caption: "Swaaaggg 😉" },
+  { src: "./assets/shreya/Topor.jpeg", caption: "Ouuukay 👍" },
+  { src: "./assets/shreya/metcalfe.jpeg", caption: "Smileee Please 😂" },
+  { src: "./assets/shreya/Hideaway.jpeg", caption: "Sweeetttt ✨" },
+  { src: "./assets/shreya/Tatooo.jpeg", caption: "Ouuuffff 😎" },
+  { src: "./assets/shreya/snap.jpeg", caption: "Swaaag 😏" },
+  { src: "./assets/shreya/Us.jpeg", caption: "You & Me 💖" },
+  { src: "./assets/shreya/Doodle.jpeg", caption: "Forever & Always ❤️" },
 ];
 
 const rotations = [
@@ -75,7 +75,7 @@ const Photo = () => {
 
       {/* Background */}
       <img
-        src="src/assets/photobg.png"
+        src="./assets/photobg.png"
         className="absolute inset-0 w-full h-full object-cover -z-10"
       />
 

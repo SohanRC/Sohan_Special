@@ -18,7 +18,7 @@ const App = () => {
     <div className="bg-cyan-950 h-screen w-screen relative overflow-hidden">
       {/* Background */}
       <img
-        src="src/assets/background.png"
+        src="./assets/background.png"
         alt=""
         className="h-full w-full object-cover"
       />
@@ -28,7 +28,7 @@ const App = () => {
         className={`absolute inset-0 border-2 flex justify-center items-center`}
       >
         <img
-          src="src/assets/Gift_box.png"
+          src="./assets/Gift_box.png"
           alt=""
           className={`w-sm hover:w-xl md:w-xl md:hover:w-2xl transition-all duration-600
           hover:cursor-pointer ${animate ? "rotate-180 opacity-0" : ""}`}
