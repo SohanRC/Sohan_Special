@@ -2,18 +2,18 @@ import { useState, useRef, useEffect } from "react";
 import song from "./assets/soft_music.mp3";
 
 const images = [
-  { src: "public/shreya/GOLUU.jpeg", caption: "Goluuuu 💕" },
-  { src: "public/shreya/Golu2.png", caption: "Ummmm 🥰" },
-  { src: "public/shreya/front.jpeg", caption: "Cuteeee 💘" },
-  { src: "public/shreya/soyyum.jpeg", caption: "Smiles 😊" },
-  { src: "public/shreya/sidelook.jpeg", caption: "Swaaaggg 😉" },
-  { src: "public/shreya/Topor.jpeg", caption: "Ouuukay 👍" },
-  { src: "public/shreya/metcalfe.jpeg", caption: "Smileee Please 😂" },
-  { src: "public/shreya/Hideaway.jpeg", caption: "Sweeetttt ✨" },
-  { src: "public/shreya/Tatooo.jpeg", caption: "Ouuuffff 😎" },
-  { src: "public/shreya/snap.jpeg", caption: "Swaaag 😏" },
-  { src: "public/shreya/Us.jpeg", caption: "You & Me 💖" },
-  { src: "public/shreya/Doodle.jpeg", caption: "Forever & Always ❤️" },
+  { src: "/shreya/GOLUU.jpeg", caption: "Goluuuu 💕" },
+  { src: "/shreya/Golu2.png", caption: "Ummmm 🥰" },
+  { src: "/shreya/front.jpeg", caption: "Cuteeee 💘" },
+  { src: "/shreya/soyyum.jpeg", caption: "Smiles 😊" },
+  { src: "/shreya/sidelook.jpeg", caption: "Swaaaggg 😉" },
+  { src: "/shreya/Topor.jpeg", caption: "Ouuukay 👍" },
+  { src: "/shreya/metcalfe.jpeg", caption: "Smileee Please 😂" },
+  { src: "/shreya/Hideaway.jpeg", caption: "Sweeetttt ✨" },
+  { src: "/shreya/Tatooo.jpeg", caption: "Ouuuffff 😎" },
+  { src: "/shreya/snap.jpeg", caption: "Swaaag 😏" },
+  { src: "/shreya/Us.jpeg", caption: "You & Me 💖" },
+  { src: "/shreya/Doodle.jpeg", caption: "Forever & Always ❤️" },
 ];
 
 const rotations = [
@@ -75,7 +75,7 @@ const Photo = () => {
 
       {/* Background */}
       <img
-        src="public/photobg.png"
+        src="/photobg.png"
         className="absolute inset-0 w-full h-full object-cover -z-10"
       />
 
